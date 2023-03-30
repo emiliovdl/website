@@ -1,0 +1,687 @@
+.top-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(75px + 6.5vw);
+}
+
+/*
+@media (max-width: 1000px) {
+  .top-page { 
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 775px) {
+  .top-page { 
+    margin-top: 112.5px;
+  }
+}
+*/
+
+.slogan-alles {
+  font-size: calc(18px + 2vw);
+  font-weight:600;
+  width:calc(150px + 40vw);
+  text-align:center;
+}
+
+
+/*
+.slogan-1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.slogan-2 {
+  margin-top: 0px;
+}
+
+.slogan-1, .slogan-2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: calc(18px + 2vw);
+  color: rgb(37,32,36);
+}
+*/
+
+.smartest-text {
+  color:rgb(0, 72, 255);
+}
+
+/* nieuwe code contact button */
+
+.container-contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(16px + 2.5vw);
+  margin-bottom: calc(50px + 5vw);
+}
+
+.contact-button1 {
+  background-color: rgb(0, 72, 255);
+  padding-left:20%;
+  padding-right:20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: calc(12px + 1vw);
+  color: white;
+  border: none;
+  border-radius:4vw;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  white-space: nowrap;
+}
+
+.contact-button1:hover, .ontdek-button:hover  {
+  transition: 0.15s;
+  background-color: rgba(0, 72, 255, 0.8);
+  cursor: pointer;
+}
+
+.contact-button1:active, .ontdek-button:active  {
+  transition: 0.15s;
+  background-color: rgba(0, 72, 255, 0.8);
+  cursor: pointer;
+  box-shadow: 2px 3px 0 rgba(0,72,255, 0.3);
+}
+
+/*vanaf hier oude code contact button*/
+
+/*
+.container-contact-button {
+  display: flex;
+  align-items: center;
+  margin-top: calc(30px + 2vw);
+}
+
+.contact-button1 {
+  background-color: rgb(0, 72, 255);
+  width: 168px;
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200px;
+  font-size: 25px;
+  color: white;
+  border: none;
+  border-radius:25px;
+}
+
+@media (max-width: 1000px) {
+  .contact-button1{ 
+  width: 112px;
+  height: 33px;
+  border-radius:16.66667;
+  font-size: 16.66667px;
+  }
+}
+
+
+
+.contact-button1:hover, .ontdek-button:hover {
+  transition: background-color 0.15s;
+  background-color: rgba(0, 72, 255, 0.8);
+  cursor: pointer;
+}
+
+.contact-button1:active, .ontdek-button:active {
+  transition: background-color 0.15s;
+  background-color: rgba(0, 72, 255, 0.8);
+  cursor: pointer;
+  box-shadow: 2px 3px 0 rgba(0,72,255, 0.3);
+}
+*/
+
+.cover {
+  width:100%;
+}
+
+.container {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  vertical-align: center;
+}
+
+.intermediate {
+  width:100%;
+  height:100%;
+}
+
+.text-image {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(4px + 3vw);
+  color: white;
+  width:calc(50px + 45vw);
+}
+
+@media (max-width:500px) {
+  .text-image {
+    top: 35.5%;
+  }
+}
+
+/*vanaf hier code repoint*/
+
+.repoint-container {
+  display: flex;
+  flex-direction: row;
+  height:800px;
+}
+
+@media (max-width: 1000px) {
+  .repoint-container { 
+     flex-direction: column;
+  }
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:800px;
+  flex:4.4;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  width: calc(350px + 4.4vw);
+  margin-bottom: 1.4vw;
+}
+
+@media (max-width: 1000px) {
+  .logo-container { 
+     margin-top: 20px;
+  }
+}
+
+.repoint-logo {
+  height: 85px;
+  width: 57px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .repoint-logo { 
+    height: 75px;
+    width: 47px;
+  }
+}
+
+.kennis-container {
+  height: calc(80px + 3.5vw);
+  width: calc(350px + 4.4vw);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size:calc(18px + 1.5vw);
+  color: rgb(37,32,36);
+ margin-bottom: 1.4vw;
+  margin-top: 1.4vw;
+}
+
+
+.repoint-text {
+  font-family: 'Poppins', sans-serif;
+  color:rgb(0, 72, 255);
+  font-weight: bolder;
+  font-size:calc(18px + 1.5vw);
+  
+}
+
+/*
+@media (max-width: 600px) {
+.kennis-container, .repoint-text{
+  font-size: 30px
+}
+}
+*/
+
+
+.kennis-text {
+
+  height: calc(80px + 3vw) ;
+  width: calc(350px + 4.4vw);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size:calc(14px + 0.278vw);
+  color: rgb(37,32,36);
+}
+
+.kennis-opsomming {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size:calc(14px + 0.278vw);
+ 
+  margin-left: 3px;
+  width: calc(350px + 4.4vw);
+  color: rgb(37,32,36);
+}
+
+.opsomming-1 {
+  margin-top: 10px;
+  display:flex;
+}
+
+@media (max-width: 499px) {
+  .kennis-container, .kennis-text, .kennis-opsomming, .button-container {
+    width: calc(200px + 3vw);
+  }
+   
+  .kennis-text {
+  
+  height: 145px;
+  }
+
+  .kennis-opsomming, .kennis-text {
+    font-size: calc(10px + 0.8vw);
+   
+  }
+
+  }
+
+
+/*
+@media (max-width: 600px) {
+  .kennis-opsomming, .opsomming-1, .kennis-text{
+    font-size: 14px
+  }
+  }
+
+@media (max-width: 600px) {
+  .kennis-text {
+    width: 350px;
+    height:80px
+      
+  }
+  }
+
+@media (max-width: 600px) {
+  .kennis-container{
+    height:100px
+  }
+  }
+
+@media (max-width: 600px) {
+  .kennis-opsomming{
+    width:350px
+
+  }
+  }
+*/  
+
+.numeration-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numeration-image {
+  margin-right: 10px;
+  height: 17px;
+  width: 17px;
+
+}
+
+
+
+
+@media (max-width: 600px) {
+  .numeration-image {
+    margin-right: 10px;
+    height: 13px;
+    width: 13px;
+   
+  }
+  }
+
+.button-container {
+  margin-top: 30px;
+  width: calc(350px + 4.4vw);
+}
+
+
+.ontdek-button {
+  background-color: rgb(0, 72, 255);
+  width: calc(200px + 6vw) ;
+  height: calc(38px + 1vw);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200px;
+  font-size: calc(18px + 0.5vw) ;
+  color: white;
+  border: none;
+  border-radius:25px;
+}
+
+/*
+@media (max-width: 600px) {
+  .button-container{
+    width: 350px;
+    
+  }
+  }
+
+@media (max-width: 600px) {
+  .ontdek-button{
+    font-size: 18px;
+    height: 38px;
+    width: 200px;
+    
+    
+  }
+  }
+  */
+
+.right-container {
+  display: flex;
+  align-items: center;
+  height:55.5vw;
+  flex:5;
+  padding-right: 60px;
+  padding-left: 60px;
+ 
+
+}
+
+
+.statistics-repoint {
+  margin-top: 25%;
+  width: 50vw;
+  
+}
+
+
+
+@media (max-width: 500px) {
+  .statistics-repoint { 
+   width: 80vw;
+    height: 40vw;
+
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .right-container { 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .statistics-repoint {
+    margin-top: 10%;
+ 
+}
+}
+
+ 
+
+
+
+/*  VANAF HIER NIEUWE CODE */
+
+.data-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  background-color:white;
+}
+
+.data-tekst-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: calc(4px + 2vw);
+  padding-left: 10%;
+  background-color:white;
+}
+
+.image-1-container {
+  display: flex;
+  justify-content: center;
+  padding-right: 11%;
+}
+
+.repoint-logo-1 {
+  width: 13%;
+}
+
+.title-2 {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: calc(12px + 2vw);
+  color: rgb(37,32,36);
+}
+
+.repoint-span {
+  color: rgb(0, 72, 255);
+}
+
+.tekst-2 {
+  font-family: 'Poppins';
+  font-weight: 200;
+  font-size: calc(8px + 0.75vw);
+  text-align:justify;
+  margin-right:14%;
+  color: rgb(37,32,36);
+}
+
+.opsomming-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6vw;
+}
+
+
+.voordeel-x {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.voordeel-tekst, .voordeel-tekst-onder {
+  font-size:calc(6px + 0.8vw);
+  font-weight:400;
+  color: rgb(37,32,36);
+}
+
+.opsomming-image {
+  width: calc(3.8px + 0.8vw);
+  height: calc(3.8px + 0.8vw);
+  margin-top:calc(2.5px + 0.35vw);
+}
+
+.button-1-container {
+  display: flex;
+  width: 100%;
+}
+
+
+.ontdek-1-button {
+  background-color: rgb(0, 72, 255);
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  padding-left: 2.3%;
+  padding-right: 2.3%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: calc(3px + 1vw);
+  color: white;
+  border: none;
+  border-radius: 2.5vw;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  white-space: nowrap;
+
+}
+
+
+.ontdek-1-button:hover {
+  transition: background-color 0.15s;
+  background-color: rgba(0, 72, 255, 0.8);
+  cursor: pointer;
+}
+
+.ontdek-1-button:active {
+  transition: background-color 0.15s;
+  background-color: rgba(0, 72, 255, 0.8);
+  cursor: pointer;
+  box-shadow: 2px 3px 0 rgba(0,72,255, 0.3);
+}
+
+
+.data-foto-container{
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+.laptop2 {
+  width:80%;
+  margin-left:-6%;
+  margin-top:10%;
+}
+
+
+@media (max-width:1060px) {
+  .data-container-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .data-tekst-container {
+    align-items: center;
+    padding-left: 0%;
+  }
+
+  .image-1-container {
+    padding-right: 0%; ;
+  }
+  
+  .tekst-2 {
+    width:calc(100px + 40vw);
+    margin-left:14%;
+  }
+
+  .title-2 {
+    background-color:white;
+  }
+
+  .voordeel-x {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+  }
+
+  /*.opsomming-2 {
+    width:80%;
+  } */
+
+
+
+  .button-1-container {
+    justify-content: center;
+    margin-right: 14%;
+    margin-left: 10%;
+  }
+
+  .ontdek-1-button {
+    font-size: calc(3px + 1.5vw);
+    border-radius: 4vw;
+  }
+
+  .data-foto-container {
+    padding-top: 1%;
+  }
+
+  .laptop2 {
+  width:65%;
+  margin-left:0%;
+  
+  }
+
+@media (max-width:600px) {
+  .ontdek-1-button {
+    font-size: calc(3px + 1.5vw);
+    padding-top: 1.3%;
+    padding-bottom: 1.3%;
+    border-radius: 4vw;
+  }
+}  
+
+  
+@media (min-width:600px) and (max-width:1060px) {
+  .repoint-logo-1 {
+    width:10%;
+  }
+}
+
+
+
+/*
+
+  .title-2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .tekst-2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 10px;
+    text-align:justify;
+    margin-right:14%;
+  }
+  .voordeel-tekst, .voordeel-tekst-onder {
+    font-size:11px;
+    font-weight:300;
+  }
+  .opsomming-image {
+    width: 8px;
+    height: 8px;
+    margin-top: 3.6px;
+  }
+  .tekst-1 {
+    margin-bottom: 10px;
+  }
+  .title-2 {
+    margin-bottom: 12px;
+  }
+  .voordeel-tekst-onder {
+    margin-bottom:40px;
+  }
+
+  */
+
+
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

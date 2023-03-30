@@ -1,0 +1,59 @@
+.sectoren-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 0px;
+  background-color: white;
+  margin-bottom:calc(50px + 4vw);
+  margin-left:calc(24px + 2vw);
+  row-gap: calc(20px + 3vw);
+  margin-right: calc(24px + 2vw);
+}
+
+.figuur1, .figuur2, .figuur3, .figuur4 {
+  width:100%;
+}
+
+.titel-steden, .titel-pretparken, .titel-luchthavens, .titel-evenementen {
+  font-size: calc(10px + 0.5vw);
+  font-weight: 700;
+  font-family: 'Poppins';
+}
+
+@media (max-width: 1250px) {
+  .sectoren-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*.figuur1:hover, .figuur2:hover, .figuur3:hover, .figuur4:hover {
+  opacity: 0.3;
+  cursor: pointer;
+}*/
+
+
+/*.uitleg-steden {
+  position: absolute;
+  opacity:0.7;
+  background-color:black;
+  color:white;
+  left:0%;
+  top:5%;
+  padding: 20px;
+  text-align: justify;
+  bottom:3%;
+  font-size:14px;
+  opacity:0;
+} */
+
+/*.figuur-sector1 {
+  position:relative;
+} */
+
+/*.uitleg-steden:hover {
+  opacity:0.7;
+  cursor:pointer;
+} */
+
+
+
+

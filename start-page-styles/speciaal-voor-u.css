@@ -1,0 +1,79 @@
+/*
+.container-speciaal-voor-u {
+  display:flex;
+  flex-direction:column;
+  height:100px;
+  width:100%;
+  background-color:green;
+}
+
+@media (max-width: 1000px) {
+  .container-speciaal-voor-u { 
+     margin-top: 250px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .container-speciaal-voor-u { 
+     margin-top: 200px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  .container-speciaal-voor-u { 
+     margin-top: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-speciaal-voor-u { 
+     margin-top: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container-speciaal-voor-u { 
+     margin-top: 0px;
+  }
+}
+ */
+
+
+.tekst {
+  margin-top: calc(20px + 3vw);
+  font-weight: 300;
+  font-size: calc(12px + 0.6vw);
+  text-decoration: underline;
+  text-decoration-color: rgb(0,72,255);
+  text-underline-position: under;
+  text-decoration-thickness: 2px;
+  margin-left:calc(24px + 2vw);
+  color: rgb(37,32,36);
+}
+
+/*
+.titel-steden, .titel-pretparken, .titel-luchthavens, .titel-evenementen {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(37,32,36);
+}
+
+@media (max-width: 600px) {
+  .tekst {
+    margin-left:30px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .titel-steden, .titel-pretparken, .titel-luchthavens, .titel-evenementen {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+} */
+
+

@@ -1,0 +1,15 @@
+body {
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+margin-bottom: 0;
+font-family: 'Poppins';
+width: 100%;
+overflow-x: hidden;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+

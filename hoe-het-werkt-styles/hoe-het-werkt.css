@@ -1,0 +1,367 @@
+.container-sectie1 {
+  display:flex;
+  flex-direction:column;
+  margin-top:calc(90px + 6vw);
+  margin-bottom:30px;
+  align-items:center;
+}
+
+.titel-sectie1 {
+  font-size:calc(18px + 2vw);
+  font-weight:600;
+  text-align:center;
+  margin-bottom:20px;
+  color: rgb(37,32,36);
+}
+
+.eenvoudig {
+  color:rgb(0,72,255);
+}
+
+.tekst-sectie1 {
+  display:flex;
+  width:35%;
+  font-size:calc(11px + 0.6vw);
+  text-align:justify;
+  background-color:white;
+  color: rgb(37,32,36);
+}
+
+@media (max-width:1000px) {
+  .tekst-sectie1 {
+    width:60%;
+  }
+}
+
+@media (max-width:750px) {
+  .tekst-sectie1 {
+    width:75%;
+  }
+}
+
+@media (max-width:450px) {
+  .tekst-sectie1 {
+    width:90%;
+  }
+}
+
+/*
+.Repoint {
+  font-weight:bold;
+} */
+
+
+.logo-repoint {
+  width:calc(60px + 3.5vw);
+  overflow:hidden;
+}
+
+.figuur-sectie1 {
+  display:flex;
+  justify-content:center;
+  margin-top:calc(20px + 2vw)
+}
+
+.hoe-het-werkt2 {
+  margin-top: calc(20px + 4vw);
+  font-size: calc(14px + 1.5vw);
+  font-weight:600;
+  margin-bottom: calc(-20px + 6vw);
+  color: rgb(37,32,36);
+}
+
+.container-sectie2 {
+  width:100%;
+  display:grid;
+  grid-template-columns: 1fr 0.8fr 1fr;
+}
+
+.stap-1-en-3 {
+  background-color:white;
+  margin-left:0px;
+  display:flex;
+  flex-direction: column;
+}
+
+.stippenlijn {
+  background-color:white;
+  display:flex;
+  justify-content: center;
+}
+
+.stap-2-en-4 {
+  background-color:white;
+  margin-right:0px;
+}
+
+.figuur-stippenlijn {
+  width:60%;
+}
+
+.tekst-stap1 {
+  flex:0.7;
+  background-color:white;
+  margin-left:20%;
+  margin-top:5%;
+  margin-bottom:15%;
+}
+
+.figuur-stap1 {
+  flex:1;
+  background-color:white;
+  display:flex;
+}
+
+.figuur-stap3 {
+  flex:1;
+  background-color:white;
+  display:flex;
+}
+
+.stappen-blauw {
+  color:blue;
+}
+
+.titels-stappen {
+  color: rgb(37,32,36);
+  font-weight:500;
+  font-size:2.15vw;
+}
+
+.tekst-stappen {
+  font-size:1.3vw;
+  text-align: justify;
+  color: rgb(37,32,36);
+}
+
+.figuur-stap1-eff {
+  width:80%;
+  object-fit:contain;
+  margin-left:20%;
+  margin-top:0%;
+}
+
+.tekst-stap3 {
+  flex:0.7;
+  background-color:white;
+  margin-left:20%;
+  margin-top:21%;
+  margin-bottom:10%;
+}
+
+.figuur-stap3-eff {
+  width:80%;
+  object-fit:contain;
+  margin-left:20%;
+  margin-top:15%;
+}
+
+.tekst-stap2 {
+  flex:0.7;
+  background-color:white;
+  margin-right:20%;
+  margin-top:19%;
+  margin-bottom:22%;
+}
+
+.figuur-stap2 {
+  flex:1;
+  background-color:white;
+  display:flex;
+}
+
+.figuur-stap4 {
+  flex:1;
+  background-color:white;
+  display:flex;
+}
+
+.figuur-stap2-eff {
+  width:60%;
+  margin-left:5%;
+  margin-top:-2%;
+}
+
+.tekst-stap4 {
+  flex:0.7;
+  background-color:white;
+  margin-right:20%;
+  margin-top:32%;
+}
+
+.figuur-stap4-eff {
+  width:80%;
+  object-fit:contain;
+  margin-right:20%;
+  margin-top:2%;
+}
+
+.container-contact-button-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(32px + 2.5vw);
+  margin-bottom: calc(30px + 8vw);
+}
+
+.contact-button-bottom {
+  background-color: rgb(0, 72, 255);
+  padding-left:20%;
+  padding-right:20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: calc(12px + 1vw);
+  color: white;
+  border: none;
+  border-radius:4vw ;
+}
+
+.contact-button-bottom:hover {
+  transition: background-color 0.15s;
+  background-color: rgba(0, 72, 255, 0.8);
+  cursor: pointer;
+}
+
+.contact-button-bottom:active {
+  transition: background-color 0.15s;
+  background-color: rgba(0, 72, 255, 0.8);
+  cursor: pointer;
+  box-shadow: 2px 3px 0 rgba(0,72,255, 0.3);
+}
+ 
+
+
+@media (max-width:600px) {
+  .container-sectie2 {
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+  }
+  
+  .stap-1-en-3 {
+    background-color:white;
+    margin-left:0px;
+    display:flex;
+    flex-direction: column;
+  }
+  
+  .stippenlijn {
+    background-color:white;
+    display:flex;
+    width:0%;
+  }
+  
+  .stap-2-en-4 {
+    background-color:white;
+    margin-right:0px;
+  }
+  
+  .figuur-stippenlijn {
+    width:0%;
+  }
+  
+  .tekst-stap1 {
+    flex:0.7;
+    background-color:white;
+    margin-left:8%;
+    margin-top:0%;
+    margin-bottom:15%;
+  }
+  
+  .figuur-stap1 {
+    flex:1;
+    background-color:white;
+    display:flex;
+  }
+
+  .tekst-stap3 {
+    flex:0.7;
+    background-color:white;
+    margin-left:8%;
+    margin-top:21%;
+    margin-bottom:8%;
+  }
+  
+  .figuur-stap3 {
+    flex:1;
+    background-color:white;
+    display:flex;
+  }
+  
+  .stappen-blauw {
+    color:blue;
+  }
+  
+  .titels-stappen {
+    color:black;
+    font-weight:500;
+    font-size:3.3vw;
+    margin-bottom:5px;
+  }
+  
+  .tekst-stappen {
+    font-size:2.15vw;
+    text-align: justify;
+  }
+  
+  .figuur-stap1-eff {
+    width:94%;
+    object-fit:contain;
+    margin-left:8%;
+    margin-top:12%;
+  }
+
+  
+  .figuur-stap3-eff {
+    width:80%;
+    object-fit:contain;
+    margin-left:10%;
+    margin-top:20%;
+  }
+  
+  .tekst-stap2 {
+    flex:0.7;
+    background-color:white;
+    margin-right:5%;
+    margin-top:21%;
+    margin-bottom:22%;
+  }
+  
+  .figuur-stap2 {
+    flex:1;
+    background-color:white;
+    display:flex;
+    /*overflow:hidden;*/
+  }
+  
+  .figuur-stap4 {
+    flex:1;
+    background-color:white;
+    display:flex;
+  }
+  
+  .figuur-stap2-eff {
+    width:70%;
+    margin-left:15%;
+    margin-top:-2%;
+  }
+  
+  .tekst-stap4 {
+    flex:0.7;
+    background-color:white;
+    margin-right:5%;
+    margin-top:32%;
+    /*margin-bottom:10%; */
+  }
+  
+  .figuur-stap4-eff {
+    width:85%;
+    object-fit:contain;
+    margin-right:8%;
+  }
+}
+
+
+

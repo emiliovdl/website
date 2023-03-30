@@ -1,0 +1,354 @@
+.footer {
+  margin-top:0px;
+  display:flex;
+  flex-direction:row;
+  height:220px;
+  width:100%;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+
+.footer-left {
+  background-color:rgb(0, 72, 255);
+  display:flex;
+  flex:1;
+}
+
+.footer-middle {
+  display:flex;
+  flex-direction:column;
+  flex:9;
+}
+
+.footer-right {
+  background-color: rgb(0, 72, 255);
+  display:flex;
+  flex:1;
+}
+
+.footer-middle-top {
+  display:flex;
+  height:150px;
+  flex-direction:row;
+}
+
+.footer-middle-bottom {
+  display:flex;
+  height: 70px;
+  flex-direction:row;
+  background-color: aliceblue;
+  justify-content:center;
+  border-style: solid;
+  border-color:white;
+  border-top-width:2px;
+  border-bottom-width:0px;
+  border-left-width:0px;
+  border-right-width:0px;
+  
+}
+
+.footer-middle-bottom-links {
+  display:flex;
+  background-color: rgb(0, 72, 255);
+  flex:1;
+}
+
+.footer-middle-bottom-midden {
+  display:flex;
+  background-color: rgb(0, 72, 255);
+  width: 180px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-middle-bottom-rechts {
+  display:flex;
+  background-color: rgb(0, 72, 255);
+  flex:1;
+  justify-content: right;
+  align-items: center;
+  font-family: 'Poppins';
+  color:white;
+  font-size: 12px;
+}
+
+.copyright {
+  text-align: right;
+  margin-right:0px;
+}
+
+.linkedin {
+  margin-right: 15px;
+  margin-left:15px;
+}
+
+
+.linkedin-logo:hover {
+  cursor: pointer;
+}
+
+.footer-middle-top-links {
+  display:flex;
+  background-color:rgb(0, 72, 255);
+  flex-direction:column;
+  justify-content: center;
+  align-items: left;
+  flex:1.6;
+}
+
+.rebin-logo-vertical {
+  width: 200px;
+  height: 200px;
+  margin-left: -48px;
+  margin-bottom: -18px;
+}
+
+
+.footer-middle-top-midden {
+  display:flex;
+  background-color:rgb(0, 72, 255);
+  flex:6;
+  flex-direction:column;
+  /*justify-content: center;*/
+  align-items:left;
+}
+
+.contact {
+  color:white;
+  font-weight:700;
+  font-size: 18px;
+  margin-top: 27px;
+}
+
+.link-contact {
+  color:white;
+  text-decoration: none;
+}
+
+.mail {
+  color:white;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+.adresregel-1, .adresregel-2 {
+  color:white;
+  font-size:12px;
+}
+
+.footer-middle-top-rechts {
+  display:flex;
+  background-color:rgb(0,72,255);
+  width:375px;
+  justify-content: space-between;
+}
+
+.Hoe-werkt-het, .Product, .Over-ons {
+  color:white;
+  font-size:20px;
+  margin-top:27px;
+}
+
+.link-footer {
+  text-decoration: none;
+  color: white;
+}
+
+.link-mail {
+  text-decoration: none;
+  color: white;
+}
+
+.link-footer:hover {
+cursor: pointer;
+}
+
+.linkedin-logo {
+  height: 22.6px;
+  width: 22.6px;
+
+}
+
+
+@media (max-width:900px) {
+  .footer-middle {
+    width:100%;
+  }
+  .footer-left {
+    width:10%;
+  }
+  .footer-right {
+    width:10%;
+  } 
+  .contact {
+    margin-right: 25px;
+  }
+} 
+
+@media (max-width:900px) {
+  .contact {
+    margin-right: 25px;
+    font-size:14px;
+    margin-top:20px;
+  }
+  .mail {
+    font-size: 11px;
+  }
+  .Hoe-werkt-het, .Product, .Over-ons {
+    font-size:15px;
+    margin-top:20px;
+  }
+  .Hoe-werkt-het {
+    margin-left:50px;
+  }
+  .Over-ons {
+    margin-right:15px;
+  }
+  .rebin-logo-vertical {
+    width: 150px;
+    margin-left: -20px;
+    margin-bottom: -12px;
+  }
+  .footer-middle-top {
+    display:flex;
+    height:112.5px;
+    flex-direction:row;
+  }
+  .footer-middle-bottom {
+    height: 52.5px;
+  }
+  .footer {
+    height:165px;
+  }
+  .copyright {
+    font-size:10px;
+    margin-right:15px;
+  }
+  .facebook-logo, .linkedin-logo, .instagram-logo {
+    height:15px;
+  }
+}
+
+
+@media (max-width:600px) {
+  .contact {
+    margin-right: 25px;
+    font-size:12px;
+    margin-top:15px;
+  }
+  .mail {
+    font-size: 11px;
+  }
+  .Hoe-werkt-het, .Product, .Over-ons {
+    font-size:12px;
+    margin-top:15px;
+  }
+  .Hoe-werkt-het {
+    margin-left:50px;
+  }
+  .Over-ons {
+    margin-right:15px;
+  }
+  .rebin-logo-vertical {
+    width: 120px;
+    margin-left: -20px;
+    margin-bottom: -12px;
+  }
+  .footer-middle-top {
+    display:flex;
+    height:90px;
+    flex-direction:row;
+  }
+  .footer-middle-bottom {
+    height: 40px;
+  }
+  .footer {
+    height:130px;
+  }
+  .copyright {
+    font-size:9px;
+    margin-right:15px;
+  }
+  .facebook-logo, .linkedin-logo, .instagram-logo {
+    height:15px;
+  }
+}
+
+@media (min-width:600px) {
+  .Over-ons {
+    margin-right: 0px;
+  }
+  .copyright {
+    margin-right: 0px;
+  }
+  .rebin-logo-vertical {
+    margin-left:-36px;
+  }
+}
+
+@media (min-width:900px) {
+  .rebin-logo-vertical {
+    margin-left:-48px;
+  }
+}
+
+@media (max-width:450px) {
+  .contact {
+    margin-right: 25px;
+    margin-left:-14px;
+    font-size:10px;
+    margin-top:15px;
+  }
+  .mail {
+    font-size: 9px;
+    margin-left:-14px;
+  }
+  .Hoe-werkt-het, .Product, .Over-ons {
+    font-size:9px;
+    margin-top:15px;
+  }
+  .Hoe-werkt-het {
+    margin-left:5px;
+  }
+  .Over-ons {
+    margin-right:8px;
+  }
+  .rebin-logo-vertical {
+    width: 120px;
+    margin-left: -20px;
+    margin-bottom: -12px;
+  }
+  .footer-middle-top {
+    display:flex;
+    height:90px;
+    flex-direction:row;
+  }
+  .footer-middle-bottom {
+    height: 40px;
+  }
+  .footer {
+    height:130px;
+  }
+  .copyright {
+    font-size:7px;
+    margin-right:8px;
+  }
+  .facebook-logo, .linkedin-logo, .instagram-logo {
+    height:15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

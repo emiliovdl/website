@@ -1,0 +1,95 @@
+
+.background-container {
+  margin-top: 75px;
+  height: 55vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient( rgba(136, 135, 135, 0), rgba(0, 0, 0, 0.85));
+}
+
+.thumbnail_car-background-image {
+  position: relative;
+  width: 100%;
+  height: 55vw;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.background-text-container {
+  
+  margin-top: 12vw;
+  margin-left: 9.1vw;
+  width: calc(80px + 25vw);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  /*background-color:pink;*/
+  
+}
+
+.top-title-container {
+  display: flex;
+  text-align: center;
+}
+
+.top--title {
+  color: white;
+  font-size: calc(5px + 2vw);
+}
+  
+
+.top-paragraph-container {
+  text-align: justify;
+  margin-top: 0px;
+}
+
+.top-paragraph {
+  color: white;
+  font-size: calc(4px + 1.2vw);
+}
+
+.Repoint-text-top {
+  font-weight: 600;
+}
+
+/*
+.contact-button-top-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2.78vw;
+
+}
+
+
+.contact-button-top {
+  background-color: rgb(0, 72, 255);
+  width: 11.7vw;
+  height: 3.5vw;
+  font-family: 'Poppins';
+  font-weight: 200px;
+  font-size: 1.74vw;
+  color: white;
+  border: none;
+  border-radius:25px;
+}
+
+.contact-button-top:hover {
+
+  transition: background-color 0.15s;
+  background-color: rgba(0, 72, 255, 0.8);
+  cursor: pointer;
+}
+
+.contact-button-top:active {
+  transition: background-color 0.15s;
+  background-color: rgba(0, 72, 255, 0.8);
+  cursor: pointer;
+  box-shadow: 2px 3px 0 rgba(0,72,255, 0.3);
+}
+*/
+
+
