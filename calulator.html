@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rebin Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--SCRIPT FOR EMAIL-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("xpbpnnJjxxfYlO1Vm");
+      })();
+    </script>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+      }
+
+      .color-rebin {
+        color: #0043ff;
+      }
+
+      .color-dark {
+        color: #0a349e;
+      }
+
+      .color-gradient {
+        background: -webkit-linear-gradient(#0043ff, #12274f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .bg-rebin-blue {
+        background-color: #0043ff;
+      }
+
+      .bg-rebin-darkblue {
+        background-color: #12274f;
+      }
+
+      .bg-rebin-gradient {
+        background-image: linear-gradient(to bottom, #0043ff, #12274f);
+      }
+
+      .bg-rebin-gradient-reverse {
+        background-image: linear-gradient(to bottom, #12274f, #0043ff);
+      }
+
+      .bg-rebin-grey {
+        background-color: #f2f2f2;
+      }
+
+      .borderwidth-05 {
+        border-width: 0.5px;
+      }
+      .border-rebin-darkblue {
+        border-color: #12274f;
+      }
+
+      .nmargin-xy {
+        margin-left: -20px;
+        margin-right: -35px;
+      }
+
+      .rebin-input {
+        border-width: 0.7px;
+        border-style: solid;
+        border-color: #0a349e;
+        border-radius: 4px;
+        margin-top: 10px;
+        margin-bottom: 8px;
+        padding-left: 10px;
+        font-size: 16px;
+        background: -webkit-linear-gradient(#0043ff, #12274f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 500;
+        width: 100%;
+      }
+
+      input::placeholder {
+        font-size: 12px;
+        font-weight: lighter;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      .radio__input:checked + .radio__label {
+        background-image: linear-gradient(to bottom, #0043ff, #12274f);
+        color: white;
+      }
+      @media (min-width: 1024px) {
+        .lg\:grid-cols {
+          grid-template-columns: 1fr 0.8fr;
+        }
+        .lg\:bg-rebin-gradient {
+          background-image: linear-gradient(to bottom, #0043ff, #12274f);
+        }
+      }
+
+      @media (min-width: 1536px) {
+        ._2xl\:rebin-input {
+          border-width: 1px;
+          border-style: solid;
+          border-color: #0a349e;
+          border-radius: 4px;
+          margin-top: 20px;
+          padding-left: 10px;
+          font-size: 24px;
+          background: -webkit-linear-gradient(#0043ff, #12274f);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-weight: 500;
+          width: 100%;
+        }
+        input::placeholder {
+          font-size: 20px;
+          font-weight: lighter;
+        }
+      }
+    </style>
+  </head>
+
+  <!--CALCULATOR-->
+  <section class="grid h-screen lg:grid-cols">
+    <!--TOP SIDE CALCULATOR / LEFT SIDE-->
+    <div style="max-width: 80%" class="mx-auto py-20 lg:my-auto">
+      <h1
+        class="color-gradient font-semibold mb-5 bg-rebin-blue text-center lg:text-left text-4xl 2xl:text-6xl 2xl:mb-10"
+      >
+        Calculator
+      </h1>
+      <h2
+        class="mb-8 text-center lg:text-left text-lg lg:text-xl 2xl:text-3xl 2xl:mb-20"
+      >
+        Bereken de geschatte voordelen voor jouw organisatie
+      </h2>
+      <!--INPUT FIELDS-->
+      <div class="lg:mt-11" id="form">
+        <div>
+          <label for="" class="block text-lg lg:text-xl 2xl:text-3xl"
+            ><span class="font-semibold">Naam</span> van je organisatie</label
+          >
+          <input
+            type="text"
+            class="rebin-input _2xl:rebin-input"
+            autocomplete="off"
+            placeholder="Naam organisatie of gemeente"
+            id="name"
+          />
+          <p class="text-xs text-red-700 2xl:text-base"></p>
+        </div>
+        <div>
+          <label for="" class="block mt-6 text-lg lg:text-xl 2xl:text-3xl"
+            ><span class="font-semibold">Totaal</span> aantal
+            vuilnisbakken</label
+          >
+          <input
+            type="number"
+            class="rebin-input _2xl:rebin-input"
+            autocomplete="off"
+            placeholder="Aantal vuilnisbakken aanwezig"
+            id="bins"
+          />
+          <p class="text-xs text-red-700 2xl:text-base"></p>
+        </div>
+        <div>
+          <label for="" class="block mt-6 text-lg lg:text-xl 2xl:text-3xl"
+            >Totale
+            <span class="font-semibold">verzamelde</span> vuilnisbakken</label
+          >
+          <input
+            type="number"
+            class="rebin-input _2xl:rebin-input"
+            autocomplete="off"
+            placeholder="Totaal wekelijks verzamelde vuilnisbakken"
+            id="binsWeekly"
+          />
+          <p class="text-xs text-red-700 2xl:text-base"></p>
+        </div>
+        <div>
+          <label for="" class="block mt-6 text-lg lg:text-xl 2xl:text-3xl"
+            >Totale <span class="font-semibold">arbeidsuren</span> voor
+            ophaling</label
+          >
+          <input
+            type="number"
+            class="rebin-input _2xl:rebin-input"
+            autocomplete="off"
+            placeholder="Totaal wekelijkse arbeidsuren tijdens ophaling"
+            id="hoursWeekly"
+          />
+          <p class="text-xs text-red-700 2xl:text-base"></p>
+        </div>
+      </div>
+      <!--SUBMIT BUTTON-->
+      <a
+        href="javascript:void(0);"
+        class="inline-flex justify-center items-center bg-rebin-gradient text-white px-5 py-2 rounded-3xl mt-5 lg:text-xl lg:px-8 2xl:text-3xl 2xl:mt-10 2xl:py-2"
+        id="submitButton"
+      >
+        Bereken
+        <img src="Images/Arrow.svg" class="h-4 ml-3 2xl:h-6 2xl:ml-6" />
+      </a>
+    </div>
+    <!--BOTTOM SIDE CALCULATOR / RIGHT SIDE-->
+    <div
+      class="flex flex-col justify-center py-20 bg-rebin-gradient-reverse lg:bg-rebin-gradient lg:py-0"
+    >
+      <div style="max-width: 80%" class="flex flex-col items-center mx-auto">
+        <h2
+          class="text-white text-center text-4xl font-semibold mb-10 lg:mb-20 2xl:text-6xl 2xl:mb-32"
+        >
+          Jaarlijkse besparingen
+        </h2>
+        <!--BESPARINGEN-->
+        <div class="flex flex-col gap-y-6 lg:w-11/12 2xl:gap-y-10">
+          <div
+            class="flex flex-col text-white text-center gap-y-2 lg:flex-row lg:items-center lg:justify-between"
+          >
+            <p class="text-xl 2xl:text-3xl">Kostenbesparing</p>
+            <p class="font-semibold text-2xl 2xl:text-4xl" id="costSavings">
+              ...
+            </p>
+          </div>
+          <div
+            class="flex flex-col text-white text-center gap-y-2 lg:flex-row lg:items-center lg:justify-between"
+          >
+            <p class="text-xl 2xl:text-3xl">Tijdsbesparing</p>
+            <p class="font-semibold text-2xl 2xl:text-4xl" id="timeSavings">
+              ...
+            </p>
+          </div>
+          <div
+            class="flex flex-col text-white text-center gap-y-2 lg:flex-row lg:items-center lg:justify-between"
+          >
+            <p class="text-xl 2xl:text-3xl">Plasticbesparing</p>
+            <p class="font-semibold text-2xl 2xl:text-4xl" id="plasticSavings">
+              ...
+            </p>
+          </div>
+        </div>
+        <!--START VANDAAG KNOP-->
+        <a
+          href="https://rebin.be/"
+          class="inline-flex justify-between items-center bg-white font-medium color-dark rounded-3xl px-5 py-2 rounded-3xl mt-10 lg:text-xl lg:mt-20 lg:w-10/12 lg:items-centers 2xl:py-2 2xl:mt-32 2xl:text-3xl 2xl:justify-around"
+        >
+          Start vandaag
+          <img
+            src="Images/Arrow_gradient.svg"
+            class="h-5 ml-4 2xl:h-6 2xl:ml-6"
+          />
+        </a>
+        <!--TESTIMONIALS-->
+        <div
+          class="flex flex-col text-center text-sm mt-10 gap-y-3 text-white font-extralight lg:flex-row lg:w-full lg:items-center lg:gap-x-3 lg:mt-16 lg:justify-center 2xl:text-xl"
+        >
+          <img src="Images/Testimonial_pitcure.svg" class="h-8 2xl:h-16" />
+          <div class="flex flex-col gap-y-1 2xl:gap-y-3">
+            <p>"Met Rebin werken we nu veel efficiënter"</p>
+            <p class="md:text-left">&#8226; Joris Nachtergaele</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</html>
